@@ -67,7 +67,6 @@
                     </tr>
                 </table>
             </tr>
-            <input type="hidden" name="id" value="<?= $_SESSION['userid'] ?>">
         </table>
         <center>
             <input style="font-size:30px;" type="submit" value="작성">
