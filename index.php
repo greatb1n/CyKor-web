@@ -55,11 +55,6 @@
         .text:hover {
             border-collapse: collapse;
         }
-
-        a:link {
-            color: #57A0EE;
-        }
-
         a:hover {
             border-collapse: collapse;
         }
@@ -88,7 +83,7 @@
 ?>
 <body>
     <?php
-    $connect = mysqli_connect('127.0.0.1', 'root', '1234', 'cykordb') or die("connect failed");
+    $connect = mysqli_connect('127.0.0.1', 'root', '1234', 'cykordb');
     $query = "select * from board order by number desc";   
     $result = mysqli_query($connect, $query);
 
