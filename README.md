@@ -17,7 +17,7 @@
  - 맞으면 index.php로 이동
  - 틀리면 history.back
 
-### create 
+### write content 
  - name은 변경 불가 
  - title, content 필수 작성 후 submit 가능
  - 날짜 시간 표시 기능 
