@@ -7,7 +7,6 @@ $pw = $_POST['pw'];
 $pw_confirm = $_POST['password_confirm'];
 $date = date('Y-m-d H:i:s');
 
-//id 중복 확인
 $query1 = "select * from member where id='$id'";
 $result1 = $connect->query($query1);
 $exist = mysqli_num_rows($result1);
