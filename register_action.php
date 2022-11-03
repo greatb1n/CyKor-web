@@ -1,4 +1,5 @@
 <?php
+header("Content-Type:text/html;charset=utf-8");
 $connect = mysqli_connect('127.0.0.1', 'root', '1234', 'cykordb');
 
 $id = $_POST['id'];
@@ -11,7 +12,7 @@ $query1 = "select * from member where id='$id'";
 $result1 = $connect->query($query1);
 $exist = mysqli_num_rows($result1);
 
-if ($exist) {      //만약 중복된 id가 있다면
+if ($exist) {      
     ?>
     <script>
         alert('이미 존재하는 ID입니다.');
@@ -28,7 +29,7 @@ else if($pw != $pw_confirm) {
     <?php 
 }
 else {
-    $query = "insert into member(id, password, date, permit) values('$id', '$pw', '$date', 0)";
+    $query = "insert into member(id, password, date) values('$id', '$pw', '$date')";
 
     $result = $connect->query($query);
 
